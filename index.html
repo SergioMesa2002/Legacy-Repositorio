@@ -361,6 +361,80 @@
       footer { padding:22px; flex-direction:column; }
     }
     @media(max-width:520px){
+      nav {
+        gap: 10px;
+        padding: 10px 14px;
+      }
+      .nav-brand {
+        min-width: 0;
+        gap: 8px;
+      }
+      .nav-logo {
+        height: 30px;
+        flex: 0 0 auto;
+      }
+      .nav-typewriter {
+        font-size: clamp(15px, 6vw, 21px);
+        letter-spacing: 2px;
+        max-width: 42vw;
+      }
+      .nav-cta {
+        flex: 0 0 auto;
+        padding: 10px 14px;
+        border-radius: 12px;
+        font-size: 13px;
+        white-space: nowrap;
+      }
+      .tick-item {
+        padding: 0 16px;
+      }
+      .hero {
+        min-height: auto;
+        padding-top: 46px;
+        padding-bottom: 52px;
+        gap: 30px;
+      }
+      .hero-logo {
+        height: 50px;
+        margin-bottom: 20px;
+      }
+      .tag {
+        max-width: 100%;
+        margin-bottom: 18px;
+        font-size: 11px;
+        letter-spacing: .5px;
+        line-height: 1.25;
+        white-space: normal;
+      }
+      h1 {
+        font-size: clamp(28px, 11vw, 40px);
+        line-height: 1;
+        letter-spacing: -1px;
+        overflow-wrap: break-word;
+      }
+      .hero p {
+        max-width: 100%;
+        font-size: 16px;
+        line-height: 1.55;
+        margin-bottom: 28px;
+      }
+      .hero-btns {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+      .btn-primary,
+      .btn-ghost {
+        width: 100%;
+        justify-content: center;
+        padding: 15px 18px;
+        text-align: center;
+        white-space: normal;
+      }
+      .hero-visual {
+        max-width: 100%;
+        overflow: hidden;
+      }
       .services-grid,.kpis { grid-template-columns:1fr; }
       .nav-links { display:none; }
       .case-img-row { grid-template-columns:1fr; }
