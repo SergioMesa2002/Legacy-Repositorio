@@ -390,9 +390,16 @@
       }
       .hero {
         min-height: auto;
+        padding-left: 16px;
+        padding-right: 16px;
         padding-top: 46px;
         padding-bottom: 52px;
         gap: 30px;
+      }
+      .hero-text {
+        min-width: 0;
+        max-width: 100%;
+        overflow: hidden;
       }
       .hero-logo {
         height: 50px;
@@ -407,10 +414,12 @@
         white-space: normal;
       }
       h1 {
-        font-size: clamp(28px, 11vw, 40px);
+        max-width: 100%;
+        font-size: clamp(24px, 9.2vw, 34px);
         line-height: 1;
-        letter-spacing: -1px;
-        overflow-wrap: break-word;
+        letter-spacing: 0;
+        overflow-wrap: anywhere;
+        word-break: normal;
       }
       .hero p {
         max-width: 100%;
